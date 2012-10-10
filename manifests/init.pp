@@ -33,7 +33,7 @@ class java {
 	    checksum      => false,
     }
 
-    archive::extract { "jdk-7u7-linux-i586.tar.gz":
+    archive::extract { "jdk-7u7-linux-i586":
         ensure     => present,
         target     => "/usr/java",
         require    => Archive::Download["jdk-7u7-linux-i586.tar.gz"]
