@@ -42,10 +42,8 @@ class java {
         notify     => Exec["chown-jdk-7u7-linux-i586.tar.gz"],
     }
 
-#    file { '/usr/java/latest':
-#        ensure => directory,
-#        owner  => root,
-#        group  => root,
-#        mode   => 0775,
-#    }
+	file { '/usr/java/latest':
+		ensure => link,
+		target => '/etc/motd',
+	}
 }
