@@ -20,13 +20,6 @@ class java {
         mode   => 0775,
     }
 
-    file { '/usr/java/':
-        ensure => directory,
-        owner  => root,
-        group  => root,
-        mode   => 0775,
-    }
-
     archive::download { "jdk-7u7-linux-i586.tar.gz":
 	    ensure        => present,
 	    url           => $url32,
