@@ -20,7 +20,7 @@ class java {
         mode   => 0775,
     }
 
-    file { '/usr/java/latest':
+    file { '/usr/java/':
         ensure => directory,
         owner  => root,
         group  => root,
@@ -44,6 +44,6 @@ class java {
 
 	file { '/usr/java/latest':
 		ensure => link,
-		target => '/etc/motd',
+		target => '/usr/java/jdk1.7.0_04',
 	}
 }
