@@ -41,6 +41,6 @@ class java {
 
 	file { '/usr/java/latest':
 		ensure => link,
-		target => '/usr/java/jdk1.7.0_04',
+		target => '/usr/java/jdk1.7.0_07',
 	}
 } 
