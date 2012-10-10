@@ -28,7 +28,7 @@ class java {
 	    ensure        => present,
 	    url           => $url32,
 		agent         => "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/20120421 Firefox/11.0",
-		cookie        => "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F",
+		cookie        => "gpw_e24=http%3A%2F%2Fwww.oracle.com%2F",
 	    checksum      => false,
     }
 
@@ -42,4 +42,4 @@ class java {
 		ensure => link,
 		target => '/usr/java/jdk1.7.0_04',
 	}
-}
+} 
