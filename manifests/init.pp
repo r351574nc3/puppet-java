@@ -35,8 +35,7 @@ class java {
     archive::extract { "jdk-7u7-linux-i586.tar.gz":
         ensure     => present,
         target     => "/usr/java",
-        require    => Archive::Download["jdk-7u7-linux-i586.tar.gz"],
-        notify     => Exec["chown-jdk-7u7-linux-i586.tar.gz"],
+        require    => Archive::Download["jdk-7u7-linux-i586.tar.gz"]
     }
 
 	file { '/usr/java/latest':
