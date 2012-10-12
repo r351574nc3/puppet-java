@@ -43,4 +43,14 @@ class java {
 		ensure => link,
 		target => '/usr/java/jdk1.7.0_07',
 	}
+
+    file { '/usr/bin/java':
+        ensure => link,
+        target => '/usr/java/latest/bin/java',
+    }
+
+    file { '/usr/bin/javac':
+        ensure => link,
+        target => '/usr/java/latest/bin/javac',
+    }
 } 
