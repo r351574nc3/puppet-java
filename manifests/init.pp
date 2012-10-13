@@ -24,7 +24,7 @@ class java {
         mode   => 0775,
     }
 
-    archive::download { "jdk-7u7-linux-x84.tar.gz":
+    archive::download { "jdk-7u7-linux-x64.tar.gz":
 	    ensure        => present,
 	    url           => $url32,
 		agent         => "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/20120421 Firefox/11.0",
